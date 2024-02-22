@@ -10,15 +10,15 @@
 
 // Note: String will have at least one element; words will always be separated by a space.
 
-function addLength(str) {
-    let words = str.split(" ");
-    let wordsLength = [];
+const addLength = (str) => {
+  let words = str.split(" ");
+  let wordsLength = [];
 
-    words.forEach(value => {
-      wordsLength.push(`${value} ${value.length}`);
-    });
+  words.forEach(value => {
+    wordsLength.push(`${value} ${value.length}`);
+  });
 
-    return wordsLength;
+  return wordsLength;
 }
-  
+
 console.log(addLength("apple ban"));

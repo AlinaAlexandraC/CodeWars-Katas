@@ -30,6 +30,6 @@ const expressionMatter = (a, b, c) => {
     results.sort((a, b) => (a - b));
 
     return results[4];
-}
-  
+};
+
 console.log(expressionMatter(2, 1, 2));

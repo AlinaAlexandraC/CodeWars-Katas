@@ -10,13 +10,13 @@
 //  1 --> [1]
 
 const monkeyCount = (n) => {
-    let monkeys = [];
+  let monkeys = [];
 
-    for (let i = 1; i <= n; i++){
-      monkeys.push(i);
-    }
+  for (let i = 1; i <= n; i++) {
+    monkeys.push(i);
+  }
 
-    return monkeys;
-}
-  
+  return monkeys;
+};
+
 console.log(monkeyCount(5));

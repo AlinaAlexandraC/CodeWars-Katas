@@ -23,14 +23,14 @@ const points = (games) => {
     let points = 0;
 
     games.forEach(game => {
-        if(parseInt(game[0]) > parseInt(game[2])){
+        if (parseInt(game[0]) > parseInt(game[2])) {
             points += 3;
-        } else if(parseInt(game[0]) === parseInt(game[2])){
+        } else if (parseInt(game[0]) === parseInt(game[2])) {
             points += 1;
-        } 
+        }
     });
 
-    return points
-}
-  
-console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]));
+    return points;
+};
+
+console.log(points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"]));

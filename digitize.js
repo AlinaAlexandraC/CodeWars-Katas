@@ -11,6 +11,6 @@ const digitize = (number) => {
     reversedArray = reversedArray.reverse();
 
     return reversedArray;
-}
-  
+};
+
 console.log(digitize(35231));

@@ -11,9 +11,9 @@
 
 const findSmallestInt = (args) => {
     // let smallestInt = args[0];
-    
-    // for (let i = 1; i < args.length; i++){
-    //     if(args[i] < smallestInt){
+
+    // for (let i = 1; i < args.length; i++) {
+    //     if (args[i] < smallestInt) {
     //         smallestInt = args[i];
     //     }
     // }
@@ -21,7 +21,7 @@ const findSmallestInt = (args) => {
     // return smallestInt;
 
     return Math.min(...args);
-}  
+};
 
-    
-console.log(findSmallestInt([78,56,232,12,8]))
+
+console.log(findSmallestInt([78, 56, 232, 12, 8]));

@@ -14,18 +14,18 @@ const myLanguages = (results) => {
     let languages = [];
     let result = [];
 
-    for (let i = 0; i < Object.keys(results).length; i++){
+    for (let i = 0; i < Object.keys(results).length; i++) {
         if (Object.values(results)[i] >= 60) {
             languages.push({ key: Object.keys(results)[i], value: Object.values(results)[i] });
         }
     }
 
-    languages.sort((a,b) => b.value - a.value);
+    languages.sort((a, b) => b.value - a.value);
     languages.forEach(value => {
-      result.push(value.key);
-    })
-    
+        result.push(value.key);
+    });
+
     return result;
-}
-  
-console.log(myLanguages({"Hindi" : 60, "Greek" : 71, "Dutch" : 93}));
+};
+
+console.log(myLanguages({ "Hindi": 60, "Greek": 71, "Dutch": 93 }));

@@ -37,12 +37,12 @@
 // ]
 
 const sortReindeer = (reindeerNames) => {
-    return reindeerNames.sort(function(a,b) { 
-      return a.split(" ")[1].localeCompare(b.split(" ")[1]);
-    });
-}
-  
+  return reindeerNames.sort(function (a, b) {
+    return a.split(" ")[1].localeCompare(b.split(" ")[1]);
+  });
+};
+
 console.log(sortReindeer([
-    "Dasher Tonoyan", "Dancer Moore", "Prancer Chua", "Vixen Hall",
-    "Comet Karavani", "Cupid Foroutan", "Donder Jonker", "Blitzen Claus"
+  "Dasher Tonoyan", "Dancer Moore", "Prancer Chua", "Vixen Hall",
+  "Comet Karavani", "Cupid Foroutan", "Donder Jonker", "Blitzen Claus"
 ]));

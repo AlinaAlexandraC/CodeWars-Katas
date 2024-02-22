@@ -19,14 +19,14 @@
 const scrollingText = (text) => {
     let letters = text.toUpperCase().split("");
     let rotations = [];
-  
-    for (let i = 0; i < letters.length; i++){
+
+    for (let i = 0; i < letters.length; i++) {
         rotations.push(letters.join(""));
         let element = letters.splice([0], 1)[0];
         letters.splice(letters.length, 0, element);
     }
 
     return rotations;
-}
-  
+};
+
 console.log(scrollingText("codewars"));

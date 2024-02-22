@@ -5,15 +5,15 @@
 // Comparison should be case sensitive and the returned list should contain only one copy of each name: "Sam" and "sam" are different, but "sAm" and "sAm" are not.
 
 const findChildren = (santasList, children) => {
-    let niceKids = [];
+  let niceKids = [];
 
-    santasList.forEach(value => {
-      if(children.includes(value) && !niceKids.includes(value)) {
-          niceKids.push(value);
-      }
-    })
-    
-    return niceKids.sort();
-}
-  
+  santasList.forEach(value => {
+    if (children.includes(value) && !niceKids.includes(value)) {
+      niceKids.push(value);
+    }
+  });
+
+  return niceKids.sort();
+};
+
 console.log(findChildren(["Jason", "Jackson", "Jordan", "Johnny", "sAm", 'Sam'], ["Jason", "Jordan", "Jennifer", "sAm", "sam"]));

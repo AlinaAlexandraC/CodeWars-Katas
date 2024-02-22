@@ -17,17 +17,17 @@
 // Explanation:
 // The Maximum Gap after sorting the array is 4, The difference between 9 - 5 = 4.
 
-function maxGap(numbers){
-    numbers.sort((a,b) => b-a);
-    let maxGap = numbers[0] - numbers[1];
-    
-    for (let i = 0; i < numbers.length; i++) {
-      if (numbers[i] - numbers[i+1] > maxGap) {
-        maxGap = numbers[i] - numbers[i+1];
-      }
-    }
+const maxGap = (numbers) => {
+  numbers.sort((a, b) => b - a);
+  let maxGap = numbers[0] - numbers[1];
 
-    return maxGap;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] - numbers[i + 1] > maxGap) {
+      maxGap = numbers[i] - numbers[i + 1];
+    }
+  }
+
+  return maxGap;
 }
-  
-console.log(maxGap([13,10,2,9,5]));
+
+console.log(maxGap([13, 10, 2, 9, 5]));

@@ -22,8 +22,8 @@ const min = (list) => {
     // return minNumber;
 
     return Math.min(...list);
-}
-  
+};
+
 const max = (list) => {
     // let maxNumber = list[0];
 
@@ -36,8 +36,7 @@ const max = (list) => {
     // return maxNumber;
 
     return Math.max(...list);
-}
-  
+};
+
 console.log(min([-52, 56, 30, 29, -54, 0, -110]));
-console.log(max([4,6,2,1,9,63,-134,566]));
-  
+console.log(max([4, 6, 2, 1, 9, 63, -134, 566]));

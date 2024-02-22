@@ -11,6 +11,6 @@
 
 const numberToString = (num) => {
     return `${num.toString()} is a ${typeof num.toString()}, same as ${String(num)}`;
-}
-  
+};
+
 console.log(numberToString(67));

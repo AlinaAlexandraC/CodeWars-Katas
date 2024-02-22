@@ -17,12 +17,12 @@ const minValue = (values) => {
     let noDuplicates = [];
 
     values.forEach(value => {
-        if(!noDuplicates.includes(value)){
+        if (!noDuplicates.includes(value)) {
             noDuplicates.push(value);
         }
-    })
+    });
 
     return Number(noDuplicates.join(""));
-}
-  
+};
+
 console.log(minValue([1, 3, 1]));

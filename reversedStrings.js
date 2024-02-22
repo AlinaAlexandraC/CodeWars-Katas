@@ -5,8 +5,8 @@
 // 'world'  =>  'dlrow'
 // 'word'   =>  'drow'
 
-const solution = (str) => {
+const reversedStrings = (str) => {
     return str.split("").reverse().join("");
-}
-  
-console.log(solution('world'));
+};
+
+console.log(reversedStrings('world'));

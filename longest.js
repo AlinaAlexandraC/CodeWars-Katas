@@ -7,15 +7,15 @@
 // ['simple', 'is', 'better', 'than', 'complex'] ==> 7
 
 const longest = (words) => {
-    let maxLength = words[0].length;
+  let maxLength = words[0].length;
 
-    for (let i = 0; i < words.length; i++){
-      if(maxLength < words[i].length){
-          maxLength = words[i].length;
-      }
+  for (let i = 0; i < words.length; i++) {
+    if (maxLength < words[i].length) {
+      maxLength = words[i].length;
     }
-    
-    return maxLength
-}
-  
+  }
+
+  return maxLength;
+};
+
 console.log(longest(['simple', 'is', 'better', 'than', 'complex']));

@@ -10,7 +10,7 @@
 
 // patrick feeney => P.F
 
-function abbrevName(name) {
+const abbrevName = (name) => {
     let parts = name.split(' ');
     // let initials = '';
 
@@ -22,5 +22,5 @@ function abbrevName(name) {
 
     return `${parts[0][0]}.${parts[1][0]}`;
 }
-  
+
 console.log(abbrevName("Sam Harris"));

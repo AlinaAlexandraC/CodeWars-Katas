@@ -18,7 +18,7 @@
 // (6) is divisible by (2), (6) is less than or equal to bound (7), and (6) is > 0.
 
 const maxMultiple = (divisor, bound) => {
-    return bound - bound%divisor;
-}
-  
+    return bound - bound % divisor;
+};
+
 console.log(maxMultiple(2, 7));

@@ -7,13 +7,13 @@
 // 5, "Hello" -> "HelloHelloHelloHelloHello"
 
 const repeatStr = (n, s) => {
-    let result = "";
+  let result = "";
 
-    for (let i = 0; i < n; i++){
-      result += s;
-    }
+  for (let i = 0; i < n; i++) {
+    result += s;
+  }
 
-    return result;
-}
-  
+  return result;
+};
+
 console.log(repeatStr(5, "#"));

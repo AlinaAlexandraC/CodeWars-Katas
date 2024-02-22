@@ -11,7 +11,7 @@
 // The input will not be 0.
 
 const nthEven = (n) => {
-    return (n === 1) ? 0 : 2*(n-1);
-}
-  
+    return (n === 1) ? 0 : 2 * (n - 1);
+};
+
 console.log(nthEven(3));

@@ -15,24 +15,24 @@ const compareArrays = (a, b) => {
 const isSortedAndHow = (array) => {
     let ascArray = [];
     let desArray = [];
-  
+
     array.forEach(value => {
-      ascArray.push(value);
-      desArray.push(value);
+        ascArray.push(value);
+        desArray.push(value);
     });
-  
-    ascArray.sort((a,b) => a-b);
-    desArray.sort((a,b) => b-a);
-  
-    if(compareArrays(array, ascArray)){
+
+    ascArray.sort((a, b) => a - b);
+    desArray.sort((a, b) => b - a);
+
+    if (compareArrays(array, ascArray)) {
         return "yes, ascending";
-    } else if (compareArrays(array, desArray)){
+    } else if (compareArrays(array, desArray)) {
         return "yes, descending";
-    } 
+    }
 
     return "no";
-}
-  
+};
+
 console.log(isSortedAndHow([1, 2]));
 console.log(isSortedAndHow([15, 7, 3, -8]));
 console.log(isSortedAndHow([4, 2, 30]));

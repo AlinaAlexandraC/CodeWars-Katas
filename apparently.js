@@ -22,12 +22,12 @@
 
 // An occurrence of 'and' and/or 'but' only counts when it is at least one space separated. For example 'andd' and 'bbut' do not count as occurrences, whereas 'b but' and 'and d' does count.
 
-function apparently(string) {
+const apparently = (string) => {
     let arr = string.split(" ");
 
-    for (let i = 0; i < arr.length; i++){ 
-        if (arr[i] === "and" && arr[i+1] !== "apparently" || arr[i] === "but" && arr[i+1] !== "apparently") {
-            arr.splice(i+1, 0, "apparently");
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === "and" && arr[i + 1] !== "apparently" || arr[i] === "but" && arr[i + 1] !== "apparently") {
+            arr.splice(i + 1, 0, "apparently");
         }
     }
 
@@ -35,5 +35,5 @@ function apparently(string) {
 
     return arr;
 }
-  
+
 console.log(apparently('It was great and I have never been on live television before but sometimes I dont watch this.'));

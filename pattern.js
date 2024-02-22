@@ -15,11 +15,11 @@
 const pattern = (n) => {
     let starPattern = "1";
 
-    for (let i = 2; i <=n; i++){
-        starPattern += '\n1' + "*".repeat(i-1) + i;
+    for (let i = 2; i <= n; i++) {
+        starPattern += '\n1' + "*".repeat(i - 1) + i;
     }
 
     return starPattern;
-}
+};
 
 console.log(pattern(10));

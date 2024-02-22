@@ -30,17 +30,17 @@
 // Note: duplications are not included when summing, (i.e) the numbers added only once.
 
 const maxTriSum = (numbers) => {
-    let uniqueChars = [];
+  let uniqueChars = [];
 
-    numbers.forEach((element) => {
-      if (!uniqueChars.includes(element)) {
-        uniqueChars.push(element);
-      }
-    });
+  numbers.forEach((element) => {
+    if (!uniqueChars.includes(element)) {
+      uniqueChars.push(element);
+    }
+  });
 
-    let sortedNumbers = uniqueChars.sort((a, b) => b - a);
+  let sortedNumbers = uniqueChars.sort((a, b) => b - a);
 
-    return sortedNumbers[0] + sortedNumbers[1] + sortedNumbers[2];
-}
-  
-console.log(maxTriSum([-7,12,-7,29,-5,0,-7,0,0,29]));
+  return sortedNumbers[0] + sortedNumbers[1] + sortedNumbers[2];
+};
+
+console.log(maxTriSum([-7, 12, -7, 29, -5, 0, -7, 0, 0, 29]));

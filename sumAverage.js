@@ -25,20 +25,20 @@ const sum = (arr) => {
     });
 
     return sum;
-}
+};
 
 const average = (number, length) => {
     return number / length;
-}
+};
 
 const sumAverage = (arr) => {
     let arrayAverage = 0;
 
-    for (let i = 0; i < arr.length; i++){
+    for (let i = 0; i < arr.length; i++) {
         arrayAverage += average(sum(arr[i]), arr[i].length);
     }
 
     return Math.floor(arrayAverage);
-}
-  
+};
+
 console.log(sumAverage([[3, 4, 1, 3, 5, 1, 4], [21, 54, 33, 21, 77]]));

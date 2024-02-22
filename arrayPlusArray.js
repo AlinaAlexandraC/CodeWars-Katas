@@ -4,15 +4,15 @@
 
 // P.S. Each array includes only integer numbers. Output is a number too.
 
-function arrayPlusArray(arr1, arr2) {
-    let sum = 0;
-    let arr3 = arr1.concat(arr2);
+const arrayPlusArray = (arr1, arr2) => {
+  let sum = 0;
+  let arr3 = arr1.concat(arr2);
 
-    arr3.forEach(value => {
-      sum += value;
-    });
+  arr3.forEach(value => {
+    sum += value;
+  });
 
-    return sum;
+  return sum;
 }
-  
+
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));

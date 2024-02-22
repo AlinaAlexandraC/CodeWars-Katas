@@ -19,8 +19,8 @@
 
 const warnTheSheep = (queue) => {
     // V1
-    let position = queue.reverse().indexOf("wolf")
-    return position === 0 ? "Pls go away and stop eating my sheep" : `Oi! Sheep number ${position}! You are about to be eaten by a wolf!`
+    let position = queue.reverse().indexOf("wolf");
+    return position === 0 ? "Pls go away and stop eating my sheep" : `Oi! Sheep number ${position}! You are about to be eaten by a wolf!`;
     // V2
     // let orderedQueue = queue.reverse()
     // for (let i = 0; i < queue.length; i++) {
@@ -30,6 +30,6 @@ const warnTheSheep = (queue) => {
     //           return `Oi! Sheep number ${orderedQueue.indexOf("wolf")}! You are about to be eaten by a wolf!`
     //       }
     //   }
-}
-  
-console.log(warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]))
+};
+
+console.log(warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]));
